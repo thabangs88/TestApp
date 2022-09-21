@@ -18,8 +18,8 @@ namespace Question2
         public static long Calculations(int a, int b)
         {
             var carry = 0;
+            var count = 0;
 
-            int count = 0;
             int valA = a.ToString().Length;
             int valB = b.ToString().Length;
 
@@ -28,12 +28,12 @@ namespace Question2
                 int x = 0, y = 0;
                 if (valA > 0)
                 {
-                    x = a.ToString()[valA - 1] - '0';
+                    x = a.ToString()[valA - 1];
                     valA--;
                 }
                 if (valB > 0)
                 {
-                    y = b.ToString()[valB - 1] - '0';
+                    y = b.ToString()[valB - 1];
                     valB--;
                 }
 
@@ -45,7 +45,6 @@ namespace Question2
                     carry = 1;
                     count++;
                 }
-
                 else
                     carry = 0;
             }

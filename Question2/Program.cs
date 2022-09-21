@@ -15,6 +15,7 @@ namespace Question2
             Console.ReadLine();
         }
 
+
         public static long Calculations(int a, int b)
         {
             var carry = 0;

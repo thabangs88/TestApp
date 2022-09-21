@@ -40,7 +40,6 @@ namespace Question2
 
                 var sum = x + y + carry;
 
-
                 if (sum >= 10)
                 {
                     carry = 1;
